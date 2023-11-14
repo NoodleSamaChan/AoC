@@ -1,6 +1,7 @@
 with open('input', 'r') as file:
     calories = 0
     calories_per_elf = []
+    number_of_elves = 1
 
     for line in file:
         if line != '\n':
@@ -9,6 +10,9 @@ with open('input', 'r') as file:
         elif line == '\n':
             calories_per_elf.append(calories)
             calories = 0
+            number_of_elves = number_of_elves + 1
+    print(number_of_elves)
+
 
     biggest_calories = calories_per_elf[0]
     top_three_elves = []
