@@ -1,3 +1,25 @@
+def group_priority(lines_to_check):
+    common_letter_group = []
+    result = []
+    priority = 0
+
+    for l in lines_to_check[0]:
+        for m in lines_to_check[1]:
+            for n in lines_to_check[2]:
+                if m == n == l and n != '\n':
+                    common_letter_group.append(n)
+                    for o in common_letter_group:
+                        if o not in result:
+                            result.append(o)
+
+    for letters in result:
+        if 97 <= ord(letters) <= 122:
+            priority = priority + (ord(letters) - 96)
+        elif 65 <= ord(letters) <= 90:
+            priority = priority + (ord(letters) - 38)
+    
+    return priority
+
 with open('2022/03/input_3', 'r') as file:
     calculation_priority = 0
     for line in file:
@@ -21,29 +43,14 @@ with open('2022/03/input_3', 'r') as file:
 
 with open('2022/03/input_3', 'r') as file:
     lines_to_check = []
-    common_letter_group = []
-    result = []
+
     priority = 0
     for line in file:
         lines_to_check.append(line)
         if len(lines_to_check) == 3:
-            for l in lines_to_check[0]:
-                for m in lines_to_check[1]:
-                    for n in lines_to_check[2]:
-                        if m == n == l and n != '\n':
-                            common_letter_group.append(n)
-                            for o in common_letter_group:
-                              if o not in result:
-                                result.append(o)
-
+            priority += group_priority(lines_to_check)
             lines_to_check = []
-            for letters in result:
-                if 97 <= ord(letters) <= 122:
-                    priority = priority + (ord(letters) - 96)
-                elif 65 <= ord(letters) <= 90:
-                    priority = priority + (ord(letters) - 38)
-            common_letter_group = []
-            result = []
+
     print(priority)
 
 
