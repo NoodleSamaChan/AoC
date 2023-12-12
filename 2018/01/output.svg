@@ -1,0 +1,28 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" width="1200" height="120"
+     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<style type="text/css">
+    .func_g:hover { stroke:black; stroke-width:0.5; cursor:pointer; }
+</style>
+<svg class="func_g" x="0.0" y="24" width="1198.9999753165507" height="23"><g>
+    <title>~:0:&lt;built-in method builtins.exec&gt; 100.00% (1 1 8.292000000000001e-06 34.468439375)</title>
+    <rect height="100%" width="100%" fill="rgb(255, 215, 125)" rx="2" ry="2" />
+    <text alignment-baseline="central" x="4.0" y="12.0" font-size="12px" fill="rgb(0,0,0)">&lt;built-in method builtins.exec&gt;</text>
+</g></svg>
+<svg class="func_g" x="0.0" y="0" width="1198.999686635079" height="23"><g>
+    <title>/Users/lunaferraraccio/Desktop/lille/advent_of_code/2018/01/01.py:1:&lt;module&gt; 100.00% (1 1 34.462479822 34.468431083)</title>
+    <rect height="100%" width="100%" fill="rgb(255, 140, 79)" rx="2" ry="2" />
+    <text alignment-baseline="central" x="4.0" y="12.0" font-size="12px" fill="rgb(0,0,0)">&lt;module&gt;</text>
+</g></svg>
+<svg class="func_g" x="0.0" y="72" width="1198.792496719243" height="23"><g>
+    <title>/Users/lunaferraraccio/Desktop/lille/advent_of_code/2018/01/01.py:1:&lt;module&gt; 99.98% (1 1 34.462479822 34.468431083)</title>
+    <rect height="100%" width="100%" fill="rgb(255, 140, 79)" rx="2" ry="2" />
+    <text alignment-baseline="central" x="4.0" y="12.0" font-size="12px" fill="rgb(0,0,0)">&lt;module&gt;</text>
+</g></svg>
+<svg class="func_g" x="0.0" y="96" width="1198.792496719243" height="23"><g>
+    <title>~:0:&lt;built-in method builtins.exec&gt; 99.98% (1 1 34.462479822 34.468431083)</title>
+    <rect height="100%" width="100%" fill="rgb(197, 197, 197)" rx="2" ry="2" />
+    <text alignment-baseline="central" x="4.0" y="12.0" font-size="12px" fill="rgb(0,0,0)">&lt;built-in method builtins.exec&gt;</text>
+</g></svg>
+</svg>
