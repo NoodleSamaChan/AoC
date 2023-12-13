@@ -31,3 +31,32 @@ a, b = duplication_checker(list_to_check)
 
 result = a * b
 print(result)
+
+def two_almost_same(new_element_to_check):
+    nb_of_differences = 0
+    for i in new_element_to_check:
+        for j in new_element_to_check:
+            for k in range(len(i)):
+                if i[k] != j[k]:
+                    nb_of_differences += 1    
+            if nb_of_differences == 1:
+                return (i, j)
+            else:
+                nb_of_differences = 0
+
+result_p2 = two_almost_same(list_to_check)
+print(result_p2)
+final_to_check = list(result_p2)
+
+def difference_replacer(elements_to_check):
+    final_string = ''
+    for i in elements_to_check:
+        for j in elements_to_check:
+            for k in range(len(i)):
+                if i[k] != j[k]:
+                    final_string = i.replace(i[k], '')
+
+    return final_string
+
+final_string_result = difference_replacer(final_to_check)
+print(final_string_result)
