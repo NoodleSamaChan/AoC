@@ -1,7 +1,7 @@
 use std::fs;
 
 fn main() {
-    let file_contents = fs::read_to_string("/Users/lunaferraraccio/Desktop/lille/advent_of_code/2022/01/rust_02/src/input_test")
+    let file_contents = fs::read_to_string("/Users/lunaferraraccio/Desktop/lille/advent_of_code/2022/01/rust_02/src/input")
     .expect("LogRocket: Should have been able to read the file");
 
     let mut biggest_number: i32 = 0;
@@ -22,12 +22,13 @@ fn main() {
             calories_per_elf = 0
         }
     }
-    println!("{:#?}", vec);
-//    biggest_number = vec.iter().max();
-//    vec.retain(|value| *value != biggest_number);
-//    biggest_number_two = vec.iter().max();
-//    vec.retain(|value| *value != biggest_number);
-//    biggest_number_three = vec.iter().max();
+    vec.push(calories_per_elf);
 
-//    println!("{}", (biggest_number + biggest_number_two + biggest_number_three))
+    biggest_number = *vec.iter().max().unwrap();
+    vec.retain(|value| *value != biggest_number);
+    biggest_number_two = *vec.iter().max().unwrap();
+    vec.retain(|value| *value != biggest_number_two);
+    biggest_number_three = *vec.iter().max().unwrap();
+
+    println!("{}", (biggest_number + biggest_number_two + biggest_number_three))
 }
